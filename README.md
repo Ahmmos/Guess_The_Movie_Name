@@ -6,3 +6,6 @@ JavaScript, CSS, Bootstrap, and HTML
 #### Playing with Two players, the first player writes a movie name and the second player tries to guess the name.
 #### If he guessed right, he will Win
 #### If he tried 9 guesses wrong he lost and the first player will win
+
+# Developer 
+Copyright © to Ahmed Mostafa 
