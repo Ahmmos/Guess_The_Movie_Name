@@ -7,5 +7,5 @@ JavaScript, CSS, Bootstrap, and HTML
 #### If he guessed right, he will Win
 #### If he tried 9 guesses wrong he lost and the first player will win
 
-# Developer 
+# Developer and Owner
 Copyright © to Ahmed Mostafa 
