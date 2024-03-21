@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies_Game</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css style sheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="">
+  <!-- first page -->
+  <div class="position-relative" id="gameStart">
+    <div id="welcome" class="text-center d-flex flex-column justify-content-center align-items-center">
+      <p>Welcome to</p>
+      <h1 class="text-danger m-4">Guess The Movie Game</h1>
+      <p class="text-warning text-center fs-5">"An old egyptian game about find the name of the movie"</p>
+      <p class="text-start bg-primary-subtle text-dark howTo">
+        <b>how to play:</b>
+        <br>Two players ,
+        <br>first player write a movie name and the second player try to guess the name.
+        <br>if he gussed right,he will win
+        <br>if he tried 9 guesses wrong the first player will win
+      </p>
+      <button id="start" class="btn btn-success ">New Game</button>
+    </div>
+  </div>
+
+
+  <!-- lost display -->
+
+
+
+  <!-- movie input -->
+  <div class="d-flex justify-content-center align-items-center" id="movieholder">
+    <div class="m-2 d-flex flex-column flex-wrap align-items-center justify-content-center py-2" id="starter">
+      <h2>Movie ?</h2>
+      <input type="text" class=" text-center form-control mt-5" placeholder="first player enter a Movie name "
+        id="MovieName" required>
+      <div id="incorrect" class="alert alert-danger m-1 " role="alert">you should enter a movie name "eg. cars" </div>
+      <button class="btn btn-outline-light m-4 px-5 " id="startBtn">Start</button>
+    </div>
+  </div>
+  <!-- appear when lose the game -->
+  <div class=" position-relative" id="lostGame">
+    <div id="youLose" class="text-center d-flex flex-column justify-content-center align-items-center">
+      <img src="./imgs/lose.PNG" alt="game Over" width="500" height="450">
+      <div class="text-bg-light youLose mb-3">
+        <h3>Movie name is : <span id="displayName" class="text-primary"></span></h3>
+        <button id="tryAgian" class="btn btn-success mb-3">Try Again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- appear when win the game -->
+  <div class=" position-relative" id="winGame">
+    <div id="youLose" class="text-center d-flex flex-column justify-content-center align-items-center">
+      <img src="./imgs/win.PNG" alt="win the game" width="500" height="450">
+      <div class="text-bg-light youLose mb-3">
+        <h3>Movie name is : <span id="displayName1" class="text-primary"></span></h3>
+        <button id="newGame" class="btn btn-success mb-3">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- game Arena -->
+  <div class="container-fluid text-center">
+    <h1 class="text-center text-danger p-3 py-5">Guess The Movie</h1>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-9">
+        <div class="gameControl d-flex flex-wrap justify-content-between align-items-center p-5 container">
+          <div class="m-auto">
+            <h3 id="moviePlace" class=" text-center ms-5">movie name </h3>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-3 text-center mb-3">
+        <table class="w-75 m-auto" id="myTable">
+          <tbody>
+            <tr class="TableRow">
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+            </tr>
+            <tr class="TableRow">
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+            </tr>
+            <tr class="TableRow">
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+              <td class="border border-2 border-white p-2 m-2 text-center"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <div class="container letters m-5 w-100 text-center m-auto" id="buttons">
+
+  </div>
+
+  <!-- footer -->
+  <footer class="m-5 p-4 text-center bg-dark text-white ">copyrights to web-devleoper <span
+      class="text-danger text-xl-center">Ahmed Mostafa</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
