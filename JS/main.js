@@ -67,7 +67,7 @@ function movies() {
         return false;
     }
 
-    movie.unshift(movieName.value);
+    movie.unshift(movieName.value.toLowerCase());
     movie.join("");
     movieName.value = "";
     movieLett(movie[0]);
