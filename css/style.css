@@ -11,22 +11,31 @@ h1,
 
 h2 {
     font-family: 'Bungee Spice', sans-serif;
-    font-size: 2.375rem;
+    font-size: 2.8rem;
+}
+
+body {
+    background: #141E30;
+    background:white;
+    color: rgb(4, 49, 88);
+    font-size: 1.25rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .rounded-pill {
     font-size: large;
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white !important;
+    background-color: #ec8e00 !important;
 }
-
-body {
-    background: #141E30;
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);
-    background: linear-gradient(to right, #243B55, #141E30);
-    color: rgb(4, 49, 88);
-    font-size: 1.25rem;
-    color: white;
+.rounded-pill:hover{
+    background-color: #cd1800 !important;
+}
+.form-control{
+    border-color:#ec8e00;
 }
 
 .howTo {
@@ -47,11 +56,11 @@ body {
     width: 45px;
     margin: 3px;
     padding: 10px !important;
-
+    background-color: #ec8e00 !important;
 }
 
 #buttons button[disabled] {
-    background-color: #ffc107 !important;
+    background-color: #f01f04!important;
 
 }
 
@@ -68,8 +77,9 @@ body {
 }
 
 #moviePlace {
-    font-size: 45px;
-    letter-spacing: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.7rem;
+    font-weight: 700;
 }
 
 #welcome {
@@ -87,7 +97,7 @@ body {
 }
 
 #youLose {
-    background: #141e303c;
+    background: #f9fafdcc;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -105,7 +115,7 @@ body {
 }
 
 #movieholder {
-    background-color: rgba(234, 234, 234, 0.317);
+    background: white;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -121,11 +131,7 @@ body {
 }
 
 #starter {
-    /* background-image: url(../imgs/cinema-concept-with-copyspace_23-2147989132.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; */
-    background-color: #243B55;
+    background: white; 
     width: 60%;
     height: 60%;
     position: absolute;
@@ -143,4 +149,17 @@ body {
 
 .rotation {
     font-size: 5rem;
+}
+
+#game_Arena{
+    min-height: 90vh;
+}
+
+
+
+
+/* responsive */
+
+@media(max-width: 768px){
+
 }

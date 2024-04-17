@@ -1,7 +1,7 @@
 // creating letters button
 const Alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
     'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-    't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    't', 'u', 'v', 'w', 'x', 'y', 'z' ,"1" , "2" , "3" , "4", "5" ,"6" ,"7" ,"8" ,"9","0"];
 
 
 const btns = document.getElementById("buttons");
@@ -29,7 +29,7 @@ const indices = [];
 function createLett() {
     let lettBtn = ``;
     for (let i = 0; i < Alph.length; i++) {
-        lettBtn += ` <button class="border border-1 p-2 rounded-2 btn btn-outline-warning text-white id="${Alph[i]}">${Alph[i].toUpperCase()}</button>`
+        lettBtn += ` <button class="border border-1 p-2 rounded-2 btn id="${Alph[i]}">${Alph[i].toUpperCase()}</button>`
     }
 
     btns.innerHTML = lettBtn;
