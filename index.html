@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="imgs/icon3.jpg" type="image/x-icon"/>
+  <link rel="icon" href="imgs/icon3.jpg" type="image/x-icon" />
   <title>Guess The Movie</title>
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
 
 <body class="">
   <!-- first page -->
-  <div class="container d-flex justify-content-center align-items-center" id="gameStart">
+  <div class="container position-relative" id="gameStart">
     <div id="welcome" class="w-75 text-center d-flex justify-content-center align-items-center">
       <div class="me-4">
         <img src="imgs/curious-boy-thinking-deeply_1308-164124.avif" alt="">
@@ -49,7 +49,7 @@
 
     <div class=" d-flex flex-wrap align-items-center justify-content-center howTo " id="starter">
       <div><img src="imgs/cover_eyes_withoutBg.png" alt="" width="260" height="370" class=""></div>
-      <div class="d-flex flex-column flex-wrap align-items-center justify-content-center py-2  w-50" >
+      <div class="d-flex flex-column flex-wrap align-items-center justify-content-center py-2  w-50">
         <h2>Movie Name ?</h2>
         <input type="text" class=" text-center form-control mt-5 w-75 " placeholder="first player enter a Movie name "
           id="MovieName" required>
@@ -62,7 +62,8 @@
   <!-- appear when lose the game -->
   <div class=" position-relative" id="lostGame">
     <div id="youLose" class="text-center d-flex flex-column justify-content-center align-items-center">
-      <i class="fa-solid fa-beat-fade "><img src="./imgs/lose-without-bg-flipped.png" alt="game Over" width="500" height="450" class="fa-solid fa-flip "></i>
+      <i class="fa-solid fa-beat-fade "><img src="./imgs/lose-without-bg-flipped.png" alt="game Over" width="500"
+          height="450" class="fa-solid fa-flip "></i>
       <div class="text-bg-light youLose mb-3">
         <h3>Movie name is : <span id="displayName" class="text-primary"></span></h3>
         <button id="tryAgian" class="btn rounded-pill mb-4 px-5 py-3">Try Again</button>
@@ -74,7 +75,7 @@
   <div class=" position-relative" id="winGame">
     <div id="youLose" class="text-center d-flex flex-column justify-content-center align-items-center">
       <i class="fa-solid fa-shake "><img src="./imgs/win-without-bg.png" alt="win the game" width="500" height="450"
-        class="fa-solid fa-user fa-bounce "></i>
+          class="fa-solid fa-user fa-bounce "></i>
       <div class=" youLose mb-3">
         <h3>Movie name is : <span id="displayName1" class="text-danger"></span></h3>
         <button id="newGame" class="btn rounded-pill mb-4 px-5 py-3">Play Again</button>
@@ -119,7 +120,7 @@
 
     </div>
   </div>
-  
+
 
   <!-- footer -->
   <footer class="mb-0 p-4 text-center bg-dark text-white ">copyrights to web-devleoper <span
