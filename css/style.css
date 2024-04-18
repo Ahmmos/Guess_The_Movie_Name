@@ -16,7 +16,7 @@ h2 {
 
 body {
     background: #141E30;
-    background:white;
+    background: white;
     color: rgb(4, 49, 88);
     font-size: 1.25rem;
     color: black;
@@ -31,11 +31,13 @@ body {
     color: white !important;
     background-color: #ec8e00 !important;
 }
-.rounded-pill:hover{
+
+.rounded-pill:hover {
     background-color: #cd1800 !important;
 }
-.form-control{
-    border-color:#ec8e00;
+
+.form-control {
+    border-color: #ec8e00;
 }
 
 .howTo {
@@ -60,7 +62,7 @@ body {
 }
 
 #buttons button[disabled] {
-    background-color: #f01f04!important;
+    background-color: #f01f04 !important;
 
 }
 
@@ -131,7 +133,7 @@ body {
 }
 
 #starter {
-    background: white; 
+    background: white;
     width: 60%;
     height: 60%;
     position: absolute;
@@ -151,15 +153,17 @@ body {
     font-size: 5rem;
 }
 
-#game_Arena{
+#game_Arena {
     min-height: 90vh;
 }
 
-
+#gameStart {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 
 /* responsive */
 
-@media(max-width: 768px){
-
-}
+@media(max-width: 768px) {}
